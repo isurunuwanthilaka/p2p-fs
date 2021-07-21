@@ -1,4 +1,4 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
 class Neighbour{
 	private String ip;

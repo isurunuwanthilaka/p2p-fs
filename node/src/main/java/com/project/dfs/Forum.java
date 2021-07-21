@@ -1,4 +1,4 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
 import java.util.ArrayList;
 import java.util.List;

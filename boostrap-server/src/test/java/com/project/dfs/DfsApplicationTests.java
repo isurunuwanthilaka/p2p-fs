@@ -1,4 +1,4 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,8 +1,6 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -21,13 +19,14 @@ public class Controller {
 
     @Value("${server.port}")
     private int portNumber;
+
     @GetMapping("/downloadFile")
     public ResponseEntity<byte[]> downloadFile(@RequestParam(name = "fileName") String fileName) throws IOException {
-        String filePath="D:/MSc/DC-Group project/p2p/fs/"+portNumber+"/"+fileName+".txt";
+        String filePath = "D:/MSc/DC-Group project/p2p/fs/" + portNumber + "/" + fileName + ".txt";
         byte[] bytes = Files.readAllBytes(Paths.get(filePath));
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType("application/octet-stream"))
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename="+"D:/MSc/DC-Group project/p2p/fs/"+portNumber+"/"+fileName+".txt")
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + "D:/MSc/DC-Group project/p2p/fs/" + portNumber + "/" + fileName + ".txt")
                 .body(bytes);
     }
 

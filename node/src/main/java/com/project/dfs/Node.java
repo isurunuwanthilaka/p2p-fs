@@ -1,6 +1,4 @@
-package com.isuru.dfs;
-
-import org.springframework.beans.factory.annotation.Autowired;
+package com.project.dfs;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -14,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.isuru.dfs.Node.*;
+import static com.project.dfs.Node.*;
 
 public class Node {
 

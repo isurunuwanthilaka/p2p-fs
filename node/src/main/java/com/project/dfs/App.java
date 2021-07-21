@@ -1,13 +1,10 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 import java.util.List;
-
-import static com.isuru.dfs.Node.*;
 
 @SpringBootApplication
 public class App {
@@ -24,18 +21,18 @@ public class App {
 
         String bootstrapAddress = System.getProperty("bootstrapAddress");
 
-        if (checkForNotEmpty(bootstrapAddress)) {
+        if (Node.checkForNotEmpty(bootstrapAddress)) {
             String[] values = bootstrapAddress.split(":");
             bootstrapIp = values[0];
             bootstrapPort = Integer.parseInt(values[1]);
         }
 
-        String nodeIp = getLocalNodeIp();
+        String nodeIp = Node.getLocalNodeIp();
 
         int nodePort = 7770;
 
         String nodeIpAddress = System.getProperty("nodeAddress");
-        if (checkForNotEmpty(nodeIpAddress)) {
+        if (Node.checkForNotEmpty(nodeIpAddress)) {
             String[] values = nodeIpAddress.split(":");
             nodeIp = values[0];
             nodePort = Integer.parseInt(values[1]);
@@ -44,20 +41,20 @@ public class App {
         String nodeName = "node" + nodePort;
 
         String nodeNameSystemProp = System.getProperty("nodeName");
-        if (checkForNotEmpty(nodeNameSystemProp)) {
+        if (Node.checkForNotEmpty(nodeNameSystemProp)) {
             nodeName = nodeNameSystemProp;
         }
 
-        int hopsCount = default_hops_count;
+        int hopsCount = Node.default_hops_count;
 
         String hopsCountSystemProp = System.getProperty("hopsCount");
-        if (checkForNotEmpty(hopsCountSystemProp)) {
+        if (Node.checkForNotEmpty(hopsCountSystemProp)) {
             hopsCount = Integer.parseInt(hopsCountSystemProp);
         }
 
         Node node = new Node(bootstrapIp, bootstrapPort, nodeName, nodeIp, nodePort, hopsCount);
 
-        log(INFO, "This node : " + nodeIp + ":" + nodePort);
+        Node.log(Node.INFO, "This node : " + nodeIp + ":" + nodePort);
 
         //1. assign own file list
         node.assignFiles();
@@ -65,7 +62,7 @@ public class App {
         //2. connect to bootstrap and get peers
         List<Peer> peersToConnect = node.connectToBootstrapNode();
 
-        log(INFO, "Peers : " + peersToConnect);
+        Node.log(Node.INFO, "Peers : " + peersToConnect);
 
         //3. connect to peers from above
         node.connectToPeers(peersToConnect, node.nodeIp, node.nodePort);

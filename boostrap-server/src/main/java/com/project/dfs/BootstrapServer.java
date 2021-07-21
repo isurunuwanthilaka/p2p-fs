@@ -1,4 +1,4 @@
-package com.isuru.dfs;
+package com.project.dfs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
