@@ -1,15 +1,24 @@
 package com.project.dfs;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.List;
 
 @SpringBootApplication
 public class App {
-//    @Value("${server.port}")
-//    private static int nodePort;
+    public static int nodePort;
+    @Value("${server.port}")
+    public void setOwnerPort(int nodePort) {
+        this.nodePort=nodePort;
+    }
+
+    @PostConstruct
+    public void init() {
+    }
 
     public static void main(String[] args) throws IOException {
 
@@ -28,8 +37,6 @@ public class App {
         }
 
         String nodeIp = Node.getLocalNodeIp();
-
-        int nodePort = 7770;
 
         String nodeIpAddress = System.getProperty("nodeAddress");
         if (Node.checkForNotEmpty(nodeIpAddress)) {

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.annotation.PostConstruct;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -13,9 +14,17 @@ import java.util.Arrays;
 
 @Service
 public class Client {
+    public static String ownerPortNumber;
 
     @Value("${server.port}")
-    private int ownerPortNumber;
+    public void setOwnerPort(String ownerPortNumber) {
+        this.ownerPortNumber=ownerPortNumber;
+    }
+
+    @PostConstruct
+    public void init() {
+    }
+
 
     RestTemplate restTemplate=new RestTemplate();
 
@@ -28,7 +37,7 @@ public class Client {
             HttpEntity<String> entity = new HttpEntity<>(headers);
             Node.log(Node.INFO,"Url "+url.toString());
             ResponseEntity<byte[]> response = restTemplate.exchange(url, HttpMethod.GET, entity, byte[].class);
-            Files.write(Paths.get("D:/MSc/DC-Group project/p2p/fs/" + "7770" + "/" + fileName + ".txt"), response.getBody());
+            Files.write(Paths.get("D:/MSc/DC-Group project/p2p/fs/" + ownerPortNumber + "/" + fileName + ".txt"), response.getBody());
         } catch (Exception e) {
             e.printStackTrace();
         }
