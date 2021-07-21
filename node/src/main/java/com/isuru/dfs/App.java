@@ -1,5 +1,6 @@
 package com.isuru.dfs;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,6 +11,9 @@ import static com.isuru.dfs.Node.*;
 
 @SpringBootApplication
 public class App {
+//    @Value("${server.port}")
+//    private static int nodePort;
+
     public static void main(String[] args) throws IOException {
 
         SpringApplication.run(App.class, args);
@@ -28,12 +32,7 @@ public class App {
 
         String nodeIp = getLocalNodeIp();
 
-//        Random random = new Random();
-//
-//        int randomNumber = random.nextInt(1000);
-//
-//        int nodePort = 10000 + randomNumber;
-        int nodePort = 7780;
+        int nodePort = 7770;
 
         String nodeIpAddress = System.getProperty("nodeAddress");
         if (checkForNotEmpty(nodeIpAddress)) {
