@@ -221,6 +221,7 @@ public class Node {
         while (true) {
             log(INFO, "Enter a query : ");
             query = in.nextLine();
+            Utils.nowEpoch("Query start");
 
             if (LEAVE.toLowerCase().equals(query.toLowerCase())) {
                 sendLeaveMessageToPeers();
@@ -314,6 +315,7 @@ public class Node {
                 String searchQuery = constructSearchQuery(nodeIp, nodePort, query, hopsCount);
                 addToSentSearchQueryMap(query.toLowerCase(), hopsCount);
                 sendSearchQuery(searchQuery);
+                Utils.setA(0);
             }
         }
     }
@@ -385,7 +387,7 @@ public class Node {
 
     public void sendSearchQuery(String searchQuery) {
         DatagramSocket clientSocket = null;
-        Node.log(INFO,"search query file name "+searchQuery);
+        Node.log(INFO, "search query file name " + searchQuery);
         try {
             for (Peer peer : routingTable) {
                 String peerAddress = peer.getIp() + ":" + peer.getPort();
@@ -871,9 +873,14 @@ class NodeThread extends Thread {
                 } else if (response.length >= 4 && Node.SEROK.equals(response[1])) {
                     Node.log(INFO, "RECEIVE: Search results received from '" + responseAddress + ":" + responsePort +
                             "' as '" + incomingMessage + "'");
-                    requestedFileName=response[5].substring(1,response[5].length()-1);
-                    Client client=new Client();
-                    client.getFile(Integer.parseInt(response[4]),requestedFileName);
+                    requestedFileName = response[5].substring(1, response[5].length() - 1);
+
+                    if (Utils.getA().equals(0)) {
+                        Client client = new Client();
+                        Utils.nowEpoch("DOWNLOAD START REQUEST");
+                        client.getFile(Integer.parseInt(response[4]), requestedFileName);
+                        Utils.setA(1);
+                    }
 //                    message - 0041 SEROK 192.168.1.2 11003 Windows XP 2
 //                    message - 0066 SEROK 2 10.100.1.124 11001 "American Pickers American Idol" 2
                     int currentHopCount = Integer.parseInt(response[6]);
@@ -1029,8 +1036,9 @@ class NodeThread extends Thread {
         for (String queriedName : node.getSentSearchQueryMap().keySet()) {
             if (fileName != null && !fileName.isEmpty() && fileName.toLowerCase().contains(queriedName)) {
                 if (hopsCount == 0 || node.getSentSearchQueryMap().get(queriedName) > hopsCount) {
-                    Node.log(INFO, "BEST RESULT: With less number of hops '" + hopsCount + "' received '" +
+                    Node.log(INFO, "RESULT: With less number of hops '" + hopsCount + "' received '" +
                             incomingMessage + "'");
+                    Utils.nowEpoch("RESULT");
                     node.updateSentSearchQueryMap(queriedName, hopsCount);
                     return true;
                 } else {

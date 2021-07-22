@@ -37,6 +37,7 @@ public class Client {
             ResponseEntity<byte[]> response = restTemplate.exchange(url, HttpMethod.GET, entity, byte[].class);
             Files.write(Paths.get("/fs/" + ownerPortNumber + "/" + fileName + ".txt"), response.getBody());
             Node.log(Node.INFO, "Requested file downloaded successfully.");
+            Utils.nowEpoch("DOWNLOAD SUCCESSFUL");
         } catch (Exception e) {
             e.printStackTrace();
         }
