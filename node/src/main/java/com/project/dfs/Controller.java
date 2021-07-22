@@ -22,11 +22,11 @@ public class Controller {
 
     @GetMapping("/downloadFile")
     public ResponseEntity<byte[]> downloadFile(@RequestParam(name = "fileName") String fileName) throws IOException {
-        String filePath = "D:/MSc/DC-Group project/p2p/fs/" + portNumber + "/" + fileName + ".txt";
+        String filePath = "/fs/" + portNumber + "/" + fileName + ".txt";
         byte[] bytes = Files.readAllBytes(Paths.get(filePath));
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType("application/octet-stream"))
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + "D:/MSc/DC-Group project/p2p/fs/" + portNumber + "/" + fileName + ".txt")
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + "/fs/" + portNumber + "/" + fileName + ".txt")
                 .body(bytes);
     }
 

@@ -182,7 +182,7 @@ public class Node {
         };
 
         // Create the directory
-        File theDir = new File("D:/MSc/DC-Group project/p2p/fs/" + String.valueOf(nodePort));
+        File theDir = new File("/fs/" + String.valueOf(nodePort));
         if (!theDir.exists()) {
             theDir.mkdirs();
         }
@@ -198,10 +198,10 @@ public class Node {
                 subFileList[i] = fileList[randIndex];
                 System.out.println("\t\t" + subFileList[i]);
 
-                File file = new File("D:/MSc/DC-Group project/p2p/fs/" + String.valueOf(nodePort) + "/" + subFileList[i] + ".txt");
+                File file = new File("/fs/" + String.valueOf(nodePort) + "/" + subFileList[i] + ".txt");
                 file.createNewFile();
 
-                FileWriter myWriter = new FileWriter("D:/MSc/DC-Group project/p2p/fs/" + String.valueOf(nodePort) + "/" + subFileList[i] + ".txt");
+                FileWriter myWriter = new FileWriter("/fs/" + String.valueOf(nodePort) + "/" + subFileList[i] + ".txt");
                 int randContent = random.nextInt(100000000);
                 myWriter.write(String.valueOf(randContent));
                 myWriter.close();
@@ -871,9 +871,7 @@ class NodeThread extends Thread {
                 } else if (response.length >= 4 && Node.SEROK.equals(response[1])) {
                     Node.log(INFO, "RECEIVE: Search results received from '" + responseAddress + ":" + responsePort +
                             "' as '" + incomingMessage + "'");
-                    Node.log(INFO,Integer.parseInt(response[4])+"port");
                     requestedFileName=response[5].substring(1,response[5].length()-1);
-                    Node.log(INFO,"fileName"+requestedFileName);
                     Client client=new Client();
                     client.getFile(Integer.parseInt(response[4]),requestedFileName);
 //                    message - 0041 SEROK 192.168.1.2 11003 Windows XP 2

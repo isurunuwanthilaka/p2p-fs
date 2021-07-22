@@ -18,7 +18,7 @@ public class Client {
 
     @Value("${server.port}")
     public void setOwnerPort(String ownerPortNumber) {
-        this.ownerPortNumber=ownerPortNumber;
+        this.ownerPortNumber = ownerPortNumber;
     }
 
     @PostConstruct
@@ -26,18 +26,17 @@ public class Client {
     }
 
 
-    RestTemplate restTemplate=new RestTemplate();
+    RestTemplate restTemplate = new RestTemplate();
 
-    public void getFile(int portNumber,String fileName) {
+    public void getFile(int portNumber, String fileName) {
         try {
-            Node.log(Node.INFO,portNumber+fileName);
             HttpHeaders headers = new HttpHeaders();
-            URI url = UriComponentsBuilder.fromUriString("http://localhost:"+portNumber+"/downloadFile").queryParam("fileName",fileName).build().toUri();
+            URI url = UriComponentsBuilder.fromUriString("http://localhost:" + portNumber + "/downloadFile").queryParam("fileName", fileName).build().toUri();
             headers.setAccept(Arrays.asList(MediaType.APPLICATION_OCTET_STREAM));
             HttpEntity<String> entity = new HttpEntity<>(headers);
-            Node.log(Node.INFO,"Url "+url.toString());
             ResponseEntity<byte[]> response = restTemplate.exchange(url, HttpMethod.GET, entity, byte[].class);
-            Files.write(Paths.get("D:/MSc/DC-Group project/p2p/fs/" + ownerPortNumber + "/" + fileName + ".txt"), response.getBody());
+            Files.write(Paths.get("/fs/" + ownerPortNumber + "/" + fileName + ".txt"), response.getBody());
+            Node.log(Node.INFO, "Requested file downloaded successfully.");
         } catch (Exception e) {
             e.printStackTrace();
         }
