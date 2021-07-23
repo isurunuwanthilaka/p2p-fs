@@ -1,0 +1,730 @@
+/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/bin/java -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49925:/Applications/IntelliJ IDEA.app/Contents/bin -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 -classpath /Users/tharushi_p/Downloads/p2p-fs-main/node/target/classes:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.2/spring-boot-starter-web-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.2/spring-boot-starter-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot/2.5.2/spring-boot-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.2/spring-boot-autoconfigure-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.2/spring-boot-starter-logging-2.5.2.jar:/Users/tharushi_p/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/tharushi_p/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/tharushi_p/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/Users/tharushi_p/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/Users/tharushi_p/.m2/repository/org/slf4j/jul-to-slf4j/1.7.31/jul-to-slf4j-1.7.31.jar:/Users/tharushi_p/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/tharushi_p/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.2/spring-boot-starter-json-2.5.2.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.3/jackson-datatype-jdk8-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.3/jackson-datatype-jsr310-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.3/jackson-module-parameter-names-2.12.3.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.2/spring-boot-starter-tomcat-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.48/tomcat-embed-core-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.48/tomcat-embed-el-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.48/tomcat-embed-websocket-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-web/5.3.8/spring-web-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-webmvc/5.3.8/spring-webmvc-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-aop/5.3.8/spring-aop-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-context/5.3.8/spring-context-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-expression/5.3.8/spring-expression-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar com.project.dfs.App
+Java HotSpot(TM) 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-07-23 11:01:23.369  INFO 1828 --- [           main] com.project.dfs.App                      : Starting App using Java 15.0.2 on Tharushis-MBP with PID 1828 (/Users/tharushi_p/Downloads/p2p-fs-main/node/target/classes started by tharushi_p in /Users/tharushi_p/Downloads/p2p-fs-main/node)
+2021-07-23 11:01:23.371  INFO 1828 --- [           main] com.project.dfs.App                      : No active profile set, falling back to default profiles: default
+2021-07-23 11:01:23.974  INFO 1828 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7783 (http)
+2021-07-23 11:01:23.980  INFO 1828 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 11:01:23.980  INFO 1828 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-23 11:01:24.022  INFO 1828 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 11:01:24.023  INFO 1828 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 616 ms
+2021-07-23 11:01:24.261  INFO 1828 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7783 (http) with context path ''
+2021-07-23 11:01:24.270  INFO 1828 --- [           main] com.project.dfs.App                      : Started App in 1.161 seconds (JVM running for 1.696)
+INFO : This node : 192.168.0.161:7783
+INFO : This node file list : 
+		Super Mario
+		Windows XP
+		Mission Impossible
+		Glee
+		Jack and Jill
+localhost/127.0.0.1
+INFO : SEND: Bootstrap server register message '0036 REG 192.168.0.161 7783 node7783'
+INFO : RECEIVE: Bootstrap server response '0050 REGOK 2 192.168.0.161 7781 192.168.0.161 7774'
+INFO : Peers : [192.168.0.161:7781, 192.168.0.161:7774]
+INFO : SEND: Join message to '192.168.0.161:7781'
+INFO : RECEIVE: 0013 JOINOK 0 from '192.168.0.161:7781'
+INFO : UPDATE: Routing table : [192.168.0.161:7781]
+INFO : SEND: Join message to '192.168.0.161:7774'
+INFO : RECEIVE: 0013 JOINOK 0 from '192.168.0.161:7774'
+INFO : UPDATE: Routing table : [192.168.0.161:7781, 192.168.0.161:7774]
+INFO : Started listening on '7783' for incoming data...
+INFO : Enter a query : 
+INFO : RECEIVE: Search query received from '/192.168.0.161:60408' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50402' as '0036 SER 192.168.0.161 7777 "Jack" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60077' as '0036 SER 192.168.0.161 7777 "Jack" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55625' as '0045 SER 192.168.0.161 7777 "American Idol" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "American Idol" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7777 "American Idol" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "American Idol" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "American Idol" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61673' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58892' as '0045 SER 192.168.0.161 7777 "Twilight Saga" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "Twilight Saga" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7777 "Twilight Saga" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Twilight Saga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Twilight Saga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52612' as '0045 SER 192.168.0.161 7777 "Twilight Saga" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "Twilight Saga" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52146' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63294' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62114' as '0036 SER 192.168.0.161 7777 "Feet" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Feet" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Feet" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58880' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52441' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63199' as '0039 SER 192.168.0.161 7777 "Windows" 3'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7783 "Windows XP" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60859' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56639' as '0049 SER 192.168.0.161 7777 "Mission Imposible" 3'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7777 "Mission Imposible" 3' is : 3
+INFO : search query file name 0049 SER 192.168.0.161 7777 "Mission Imposible" 2
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Mission Imposible" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Mission Imposible" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57638' as '0049 SER 192.168.0.161 7777 "Mission Imposible" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0049 SER 192.168.0.161 7777 "Mission Imposible" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62812' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58617' as '0040 SER 192.168.0.161 7777 "Windows8" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Windows8" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Windows8" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Windows8" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Windows8" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64931' as '0040 SER 192.168.0.161 7777 "Windows8" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Windows8" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56170' as '0041 SER 192.168.0.161 7777 "Windows 8" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Windows 8" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Windows 8" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57537' as '0037 SER 192.168.0.161 7777 "Happy" 3'
+DEBUG : Current hops count for '0037 SER 192.168.0.161 7777 "Happy" 3' is : 3
+INFO : search query file name 0037 SER 192.168.0.161 7777 "Happy" 2
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7777 "Happy" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7777 "Happy" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57225' as '0041 SER 192.168.0.161 7777 "Windows 8" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Windows 8" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Windows 8" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52815' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55680' as '0044 SER 192.168.0.161 7777 "Supper Mario" 3'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7777 "Supper Mario" 3' is : 3
+INFO : search query file name 0044 SER 192.168.0.161 7777 "Supper Mario" 2
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Supper Mario" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Supper Mario" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64039' as '0044 SER 192.168.0.161 7777 "Supper Mario" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0044 SER 192.168.0.161 7777 "Supper Mario" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61483' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58608' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53401' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61896' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53376' as '0049 SER 192.168.0.161 7777 "Turn up the Music" 3'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7777 "Turn up the Music" 3' is : 3
+INFO : search query file name 0049 SER 192.168.0.161 7777 "Turn up the Music" 2
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Turn up the Music" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Turn up the Music" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52791' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63419' as '0048 SER 192.168.0.161 7777 "American Pickers" 2'
+DEBUG : Current hops count for '0048 SER 192.168.0.161 7777 "American Pickers" 2' is : 2
+INFO : search query file name 0048 SER 192.168.0.161 7777 "American Pickers" 1
+INFO : SEND: Sending search query '0048 SER 192.168.0.161 7777 "American Pickers" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0048 SER 192.168.0.161 7777 "American Pickers" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59220' as '0048 SER 192.168.0.161 7777 "American Pickers" 0'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0048 SER 192.168.0.161 7777 "American Pickers" 0'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53008' as '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3' is : 3
+INFO : search query file name 0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 2
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53467' as '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53571' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60526' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63027' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56498' as '0036 SER 192.168.0.161 7777 "Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53198' as '0036 SER 192.168.0.161 7777 "Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51105' as '0036 SER 192.168.0.161 7777 "Glee" 3'
+INFO : FOUND: File found locally : 0044 SEROK 1 192.168.0.161 7783 "Glee" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54252' as '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 3'
+DEBUG : Current hops count for '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 3' is : 3
+INFO : search query file name 0050 SER 192.168.0.161 7777 "The Vampire Diarie" 2
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63205' as '0042 SER 192.168.0.161 7777 "King Athor" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "King Athor" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "King Athor" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "King Athor" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "King Athor" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65030' as '0042 SER 192.168.0.161 7777 "King Athor" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0042 SER 192.168.0.161 7777 "King Athor" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64632' as '0043 SER 192.168.0.161 7777 "King Arthur" 3'
+DEBUG : Current hops count for '0043 SER 192.168.0.161 7777 "King Arthur" 3' is : 3
+INFO : search query file name 0043 SER 192.168.0.161 7777 "King Arthur" 2
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7777 "King Arthur" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7777 "King Arthur" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49970' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63343' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53253' as '0043 SER 192.168.0.161 7777 "King Arthur" 3'
+DEBUG : Current hops count for '0043 SER 192.168.0.161 7777 "King Arthur" 3' is : 3
+INFO : search query file name 0043 SER 192.168.0.161 7777 "King Arthur" 2
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7777 "King Arthur" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7777 "King Arthur" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49344' as '0042 SER 192.168.0.161 7777 "Windows XP" 3'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7783 "Windows XP" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55038' as '0042 SER 192.168.0.161 7777 "Windows XP" 3'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7783 "Windows XP" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57084' as '0044 SER 192.168.0.161 7777 "Harry Potter" 3'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7777 "Harry Potter" 3' is : 3
+INFO : search query file name 0044 SER 192.168.0.161 7777 "Harry Potter" 2
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Harry Potter" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Harry Potter" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60315' as '0036 SER 192.168.0.161 7777 "Feet" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Feet" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Feet" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59518' as '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3' is : 3
+INFO : search query file name 0044 SER 192.168.0.161 7777 "Kungfu Panda" 2
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Kungfu Panda" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Kungfu Panda" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58956' as '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64479' as '0041 SER 192.168.0.161 7777 "Lady Gaga" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Lady Gaga" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Lady Gaga" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Lady Gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Lady Gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50622' as '0036 SER 192.168.0.161 7777 "Gaga" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Gaga" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Gaga" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50687' as '0041 SER 192.168.0.161 7777 "Hapy Feet" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Hapy Feet" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Hapy Feet" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Hapy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Hapy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52063' as '0041 SER 192.168.0.161 7777 "Hapy Feet" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0041 SER 192.168.0.161 7777 "Hapy Feet" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57437' as '0042 SER 192.168.0.161 7777 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60710' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62331' as '0036 SER 192.168.0.161 7777 "King" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "King" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7777 "King" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "King" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "King" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55578' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7777 "Hacking" 3' is : 3
+INFO : search query file name 0039 SER 192.168.0.161 7777 "Hacking" 2
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55431' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7777 "Hacking" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63012' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7777 "Hacking" 3' is : 3
+INFO : search query file name 0039 SER 192.168.0.161 7777 "Hacking" 2
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54390' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7777 "Hacking" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57646' as '0040 SER 192.168.0.161 7779 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64106' as '0036 SER 192.168.0.161 7779 "Jack" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63609' as '0036 SER 192.168.0.161 7779 "Jack" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56603' as '0045 SER 192.168.0.161 7779 "American Idle" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "American Idle" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7779 "American Idle" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idle" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idle" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53518' as '0045 SER 192.168.0.161 7779 "American Idle" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "American Idle" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64102' as '0045 SER 192.168.0.161 7779 "American Idol" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "American Idol" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7779 "American Idol" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idol" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idol" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49395' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54113' as '0045 SER 192.168.0.161 7779 "Twilight Saga" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "Twilight Saga" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7779 "Twilight Saga" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "Twilight Saga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "Twilight Saga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51311' as '0045 SER 192.168.0.161 7779 "Twilight Saga" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "Twilight Saga" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63633' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58313' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60889' as '0036 SER 192.168.0.161 7779 "Feet" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "Feet" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7779 "Feet" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53762' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62436' as '0040 SER 192.168.0.161 7779 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57069' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59424' as '0051 SER 192.168.0.161 7779 "Mission Implossible" 3'
+DEBUG : Current hops count for '0051 SER 192.168.0.161 7779 "Mission Implossible" 3' is : 3
+INFO : search query file name 0051 SER 192.168.0.161 7779 "Mission Implossible" 2
+INFO : SEND: Sending search query '0051 SER 192.168.0.161 7779 "Mission Implossible" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0051 SER 192.168.0.161 7779 "Mission Implossible" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56859' as '0051 SER 192.168.0.161 7779 "Mission Implossible" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0051 SER 192.168.0.161 7779 "Mission Implossible" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59895' as '0040 SER 192.168.0.161 7779 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60870' as '0037 SER 192.168.0.161 7779 "Happy" 3'
+DEBUG : Current hops count for '0037 SER 192.168.0.161 7779 "Happy" 3' is : 3
+INFO : search query file name 0037 SER 192.168.0.161 7779 "Happy" 2
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7779 "Happy" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7779 "Happy" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56692' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56255' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49895' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64476' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54702' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55597' as '0049 SER 192.168.0.161 7779 "Turn up the Music" 3'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7779 "Turn up the Music" 3' is : 3
+INFO : search query file name 0049 SER 192.168.0.161 7779 "Turn up the Music" 2
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7779 "Turn up the Music" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7779 "Turn up the Music" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63179' as '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 3'
+DEBUG : Current hops count for '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 3' is : 3
+INFO : search query file name 0052 SER 192.168.0.161 7779 "Adventures of Tintin" 2
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53936' as '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59328' as '0042 SER 192.168.0.161 7779 "Happy Feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64763' as '0048 SER 192.168.0.161 7779 "American Pickers" 3'
+DEBUG : Current hops count for '0048 SER 192.168.0.161 7779 "American Pickers" 3' is : 3
+INFO : search query file name 0048 SER 192.168.0.161 7779 "American Pickers" 2
+INFO : SEND: Sending search query '0048 SER 192.168.0.161 7779 "American Pickers" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0048 SER 192.168.0.161 7779 "American Pickers" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61146' as '0048 SER 192.168.0.161 7779 "American Pickers" 1'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0048 SER 192.168.0.161 7779 "American Pickers" 1'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54260' as '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 3'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 3' is : 3
+INFO : search query file name 0053 SER 192.168.0.161 7779 "Microfost Office 2010" 2
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61749' as '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50371' as '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 3'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 3' is : 3
+INFO : search query file name 0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 2
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52502' as '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64224' as '0040 SER 192.168.0.161 7779 "Twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51740' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60453' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51051' as '0036 SER 192.168.0.161 7779 "Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64390' as '0036 SER 192.168.0.161 7779 "Jill" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50039' as '0036 SER 192.168.0.161 7779 "Glee" 3'
+INFO : FOUND: File found locally : 0044 SEROK 1 192.168.0.161 7783 "Glee" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63887' as '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 2'
+DEBUG : Current hops count for '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 2' is : 2
+INFO : search query file name 0050 SER 192.168.0.161 7779 "The Vampire Diarie" 1
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50839' as '0045 SER 192.168.0.161 7779 "JAck and Jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52652' as '0045 SER 192.168.0.161 7779 "JAck and Jill" 2'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58495' as '0042 SER 192.168.0.161 7779 "windows XP" 3'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7783 "Windows XP" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62030' as '0042 SER 192.168.0.161 7779 "windows XP" 2'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7783 "Windows XP" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63830' as '0044 SER 192.168.0.161 7779 "harry potter" 3'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7779 "harry potter" 3' is : 3
+INFO : search query file name 0044 SER 192.168.0.161 7779 "harry potter" 2
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7779 "harry potter" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7779 "harry potter" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57560' as '0036 SER 192.168.0.161 7779 "feet" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "feet" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7779 "feet" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64518' as '0045 SER 192.168.0.161 7779 "kung fu panda" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "kung fu panda" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7779 "kung fu panda" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "kung fu panda" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "kung fu panda" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53014' as '0045 SER 192.168.0.161 7779 "kung fu panda" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "kung fu panda" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62170' as '0041 SER 192.168.0.161 7779 "lady gaga" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7779 "lady gaga" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7779 "lady gaga" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7779 "lady gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7779 "lady gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60567' as '0036 SER 192.168.0.161 7779 "gaga" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "gaga" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7779 "gaga" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61787' as '0042 SER 192.168.0.161 7779 "happy feet" 3'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "happy feet" 3' is : 3
+INFO : search query file name 0042 SER 192.168.0.161 7779 "happy feet" 2
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "happy feet" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "happy feet" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55679' as '0040 SER 192.168.0.161 7779 "twilight" 3'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "twilight" 3' is : 3
+INFO : search query file name 0040 SER 192.168.0.161 7779 "twilight" 2
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "twilight" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "twilight" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52034' as '0039 SER 192.168.0.161 7779 "hacking" 3'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7779 "hacking" 3' is : 3
+INFO : search query file name 0039 SER 192.168.0.161 7779 "hacking" 2
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7779 "hacking" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7779 "hacking" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63785' as '0039 SER 192.168.0.161 7779 "hacking" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7779 "hacking" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53256' as '0040 SER 192.168.0.161 7785 "twilight" 2'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7785 "twilight" 2' is : 2
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 1
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55578' as '0036 SER 192.168.0.161 7785 "jack" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59038' as '0036 SER 192.168.0.161 7785 "jack" 1'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60596' as '0045 SER 192.168.0.161 7785 "american idol" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7785 "american idol" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7785 "american idol" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "american idol" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "american idol" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58936' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54209' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61738' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54092' as '0036 SER 192.168.0.161 7785 "feet" 2'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7785 "feet" 2' is : 2
+INFO : search query file name 0036 SER 192.168.0.161 7785 "feet" 1
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55458' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61410' as '0040 SER 192.168.0.161 7785 "twilight" 2'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7785 "twilight" 2' is : 2
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 1
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63584' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56918' as '0040 SER 192.168.0.161 7785 "twilight" 2'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7785 "twilight" 2' is : 2
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 1
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50935' as '0041 SER 192.168.0.161 7785 "windows 8" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7785 "windows 8" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7785 "windows 8" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63360' as '0037 SER 192.168.0.161 7785 "happy" 2'
+DEBUG : Current hops count for '0037 SER 192.168.0.161 7785 "happy" 2' is : 2
+INFO : search query file name 0037 SER 192.168.0.161 7785 "happy" 1
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7785 "happy" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7785 "happy" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61698' as '0041 SER 192.168.0.161 7785 "windows 8" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7785 "windows 8" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7785 "windows 8" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58945' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54915' as '0043 SER 192.168.0.161 7785 "super mario" 3'
+INFO : FOUND: File found locally : 0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57272' as '0043 SER 192.168.0.161 7785 "super mario" 1'
+INFO : FOUND: File found locally : 0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58203' as '0045 SER 192.168.0.161 7785 "jack and jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52749' as '0045 SER 192.168.0.161 7785 "jack and jill" 1'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51305' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54604' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53330' as '0049 SER 192.168.0.161 7785 "turn up the music" 2'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7785 "turn up the music" 2' is : 2
+INFO : search query file name 0049 SER 192.168.0.161 7785 "turn up the music" 1
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7785 "turn up the music" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7785 "turn up the music" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58339' as '0052 SER 192.168.0.161 7785 "adventures of tintin" 2'
+DEBUG : Current hops count for '0052 SER 192.168.0.161 7785 "adventures of tintin" 2' is : 2
+INFO : search query file name 0052 SER 192.168.0.161 7785 "adventures of tintin" 1
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7785 "adventures of tintin" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7785 "adventures of tintin" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59500' as '0052 SER 192.168.0.161 7785 "adventures of tintin" 2'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0052 SER 192.168.0.161 7785 "adventures of tintin" 2'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62286' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49894' as '0043 SER 192.168.0.161 7785 "super mario" 3'
+INFO : FOUND: File found locally : 0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57781' as '0043 SER 192.168.0.161 7785 "super mario" 1'
+INFO : FOUND: File found locally : 0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65130' as '0053 SER 192.168.0.161 7785 "microdoft office 2010" 3'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7785 "microdoft office 2010" 3' is : 3
+INFO : search query file name 0053 SER 192.168.0.161 7785 "microdoft office 2010" 2
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microdoft office 2010" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microdoft office 2010" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50805' as '0053 SER 192.168.0.161 7785 "microdoft office 2010" 2'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7785 "microdoft office 2010" 2'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55957' as '0053 SER 192.168.0.161 7785 "microsoft office 2010" 3'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7785 "microsoft office 2010" 3' is : 3
+INFO : search query file name 0053 SER 192.168.0.161 7785 "microsoft office 2010" 2
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microsoft office 2010" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microsoft office 2010" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61340' as '0053 SER 192.168.0.161 7785 "microsoft office 2010" 2'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7785 "microsoft office 2010" 2'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50624' as '0040 SER 192.168.0.161 7785 "twilight" 2'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7785 "twilight" 2' is : 2
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 1
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56862' as '0045 SER 192.168.0.161 7785 "jack and jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62403' as '0045 SER 192.168.0.161 7785 "jack and jill" 1'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60556' as '0036 SER 192.168.0.161 7785 "jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59077' as '0036 SER 192.168.0.161 7785 "jill" 1'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57284' as '0036 SER 192.168.0.161 7785 "glee" 2'
+INFO : FOUND: File found locally : 0044 SEROK 1 192.168.0.161 7783 "Glee" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59503' as '0046 SER 192.168.0.161 7785 "vampire diarie" 1'
+DEBUG : Current hops count for '0046 SER 192.168.0.161 7785 "vampire diarie" 1' is : 1
+INFO : search query file name 0046 SER 192.168.0.161 7785 "vampire diarie" 0
+INFO : SEND: Sending search query '0046 SER 192.168.0.161 7785 "vampire diarie" 0' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0046 SER 192.168.0.161 7785 "vampire diarie" 0' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58098' as '0045 SER 192.168.0.161 7785 "jack and jill" 3'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55483' as '0045 SER 192.168.0.161 7785 "jack and jill" 1'
+INFO : FOUND: File found locally : 0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7785'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56704' as '0036 SER 192.168.0.161 7785 "feet" 2'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7785 "feet" 2' is : 2
+INFO : search query file name 0036 SER 192.168.0.161 7785 "feet" 1
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52638' as '0045 SER 192.168.0.161 7785 "kung fu panda" 3'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7785 "kung fu panda" 3' is : 3
+INFO : search query file name 0045 SER 192.168.0.161 7785 "kung fu panda" 2
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "kung fu panda" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "kung fu panda" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64249' as '0045 SER 192.168.0.161 7785 "kung fu panda" 2'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7785 "kung fu panda" 2'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64009' as '0041 SER 192.168.0.161 7785 "lady gaga" 3'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7785 "lady gaga" 3' is : 3
+INFO : search query file name 0041 SER 192.168.0.161 7785 "lady gaga" 2
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "lady gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "lady gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64744' as '0036 SER 192.168.0.161 7785 "gaga" 3'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7785 "gaga" 3' is : 3
+INFO : search query file name 0036 SER 192.168.0.161 7785 "gaga" 2
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "gaga" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "gaga" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64131' as '0042 SER 192.168.0.161 7785 "happy feet" 2'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7785 "happy feet" 2' is : 2
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 1
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64826' as '0040 SER 192.168.0.161 7785 "twilight" 2'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7785 "twilight" 2' is : 2
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 1
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 1' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63563' as '0039 SER 192.168.0.161 7785 "hacking" 3'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7785 "hacking" 3' is : 3
+INFO : search query file name 0039 SER 192.168.0.161 7785 "hacking" 2
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7785 "hacking" 2' to '192.168.0.161:7781'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7785 "hacking" 2' to '192.168.0.161:7774'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58068' as '0039 SER 192.168.0.161 7785 "hacking" 2'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7785 "hacking" 2'

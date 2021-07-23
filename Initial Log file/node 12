@@ -1,0 +1,1777 @@
+/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/bin/java -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49940:/Applications/IntelliJ IDEA.app/Contents/bin -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 -classpath /Users/tharushi_p/Downloads/p2p-fs-main/node/target/classes:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.2/spring-boot-starter-web-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.2/spring-boot-starter-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot/2.5.2/spring-boot-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.2/spring-boot-autoconfigure-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.2/spring-boot-starter-logging-2.5.2.jar:/Users/tharushi_p/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/tharushi_p/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/tharushi_p/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/Users/tharushi_p/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/Users/tharushi_p/.m2/repository/org/slf4j/jul-to-slf4j/1.7.31/jul-to-slf4j-1.7.31.jar:/Users/tharushi_p/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/tharushi_p/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.2/spring-boot-starter-json-2.5.2.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.3/jackson-datatype-jdk8-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.3/jackson-datatype-jsr310-2.12.3.jar:/Users/tharushi_p/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.3/jackson-module-parameter-names-2.12.3.jar:/Users/tharushi_p/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.2/spring-boot-starter-tomcat-2.5.2.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.48/tomcat-embed-core-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.48/tomcat-embed-el-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.48/tomcat-embed-websocket-9.0.48.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-web/5.3.8/spring-web-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-webmvc/5.3.8/spring-webmvc-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-aop/5.3.8/spring-aop-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-context/5.3.8/spring-context-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-expression/5.3.8/spring-expression-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/Users/tharushi_p/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar com.project.dfs.App
+Java HotSpot(TM) 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-07-23 11:01:38.027  INFO 1834 --- [           main] com.project.dfs.App                      : Starting App using Java 15.0.2 on Tharushis-MBP with PID 1834 (/Users/tharushi_p/Downloads/p2p-fs-main/node/target/classes started by tharushi_p in /Users/tharushi_p/Downloads/p2p-fs-main/node)
+2021-07-23 11:01:38.029  INFO 1834 --- [           main] com.project.dfs.App                      : No active profile set, falling back to default profiles: default
+2021-07-23 11:01:38.654  INFO 1834 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7785 (http)
+2021-07-23 11:01:38.660  INFO 1834 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 11:01:38.660  INFO 1834 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-23 11:01:38.707  INFO 1834 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 11:01:38.707  INFO 1834 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 643 ms
+2021-07-23 11:01:38.960  INFO 1834 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7785 (http) with context path ''
+2021-07-23 11:01:38.969  INFO 1834 --- [           main] com.project.dfs.App                      : Started App in 1.203 seconds (JVM running for 1.709)
+INFO : This node : 192.168.0.161:7785
+INFO : This node file list : 
+		Harry Potter
+		Mission Impossible
+		Windows XP
+		Modern Family
+		American Pickers
+localhost/127.0.0.1
+INFO : SEND: Bootstrap server register message '0036 REG 192.168.0.161 7785 node7785'
+INFO : RECEIVE: Bootstrap server response '0050 REGOK 2 192.168.0.161 7784 192.168.0.161 7779'
+INFO : Peers : [192.168.0.161:7784, 192.168.0.161:7779]
+INFO : SEND: Join message to '192.168.0.161:7784'
+INFO : RECEIVE: 0013 JOINOK 0 from '192.168.0.161:7784'
+INFO : UPDATE: Routing table : [192.168.0.161:7784]
+INFO : SEND: Join message to '192.168.0.161:7779'
+INFO : RECEIVE: 0013 JOINOK 0 from '192.168.0.161:7779'
+INFO : UPDATE: Routing table : [192.168.0.161:7784, 192.168.0.161:7779]
+INFO : Started listening on '7785' for incoming data...
+INFO : Enter a query : 
+INFO : RECEIVE: Search query received from '/192.168.0.161:55748' as '0040 SER 192.168.0.161 7777 "Twilight" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63952' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Twilight" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55746' as '0036 SER 192.168.0.161 7777 "Jack" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Jack" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Jack" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Jack" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Jack" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59952' as '0036 SER 192.168.0.161 7777 "Jack" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7777 "Jack" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49207' as '0045 SER 192.168.0.161 7777 "American Idol" 4'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "American Idol" 4' is : 4
+INFO : search query file name 0045 SER 192.168.0.161 7777 "American Idol" 3
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "American Idol" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "American Idol" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60813' as '0045 SER 192.168.0.161 7777 "American Idol" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "American Idol" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56452' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60283' as '0045 SER 192.168.0.161 7777 "Twilight Saga" 4'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "Twilight Saga" 4' is : 4
+INFO : search query file name 0045 SER 192.168.0.161 7777 "Twilight Saga" 3
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Twilight Saga" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Twilight Saga" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52896' as '0045 SER 192.168.0.161 7777 "Twilight Saga" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "Twilight Saga" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63280' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61585' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56821' as '0036 SER 192.168.0.161 7777 "Feet" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Feet" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Feet" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62030' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54621' as '0040 SER 192.168.0.161 7777 "Twilight" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59635' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Twilight" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56066' as '0039 SER 192.168.0.161 7777 "Windows" 2'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7785 "Windows XP" 2 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57300' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58648' as '0049 SER 192.168.0.161 7777 "Mission Imposible" 4'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7777 "Mission Imposible" 4' is : 4
+INFO : search query file name 0049 SER 192.168.0.161 7777 "Mission Imposible" 3
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Mission Imposible" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Mission Imposible" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52605' as '0049 SER 192.168.0.161 7777 "Mission Imposible" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0049 SER 192.168.0.161 7777 "Mission Imposible" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59654' as '0040 SER 192.168.0.161 7777 "Twilight" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57936' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Twilight" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57588' as '0040 SER 192.168.0.161 7777 "Windows8" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Windows8" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Windows8" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Windows8" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Windows8" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56276' as '0040 SER 192.168.0.161 7777 "Windows8" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Windows8" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49500' as '0041 SER 192.168.0.161 7777 "Windows 8" 2'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Windows 8" 2' is : 2
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Windows 8" 1
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 1' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 1' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50205' as '0035 SER 192.168.0.161 7777 "The" 4'
+DEBUG : Current hops count for '0035 SER 192.168.0.161 7777 "The" 4' is : 4
+INFO : search query file name 0035 SER 192.168.0.161 7777 "The" 3
+INFO : SEND: Sending search query '0035 SER 192.168.0.161 7777 "The" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0035 SER 192.168.0.161 7777 "The" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59017' as '0037 SER 192.168.0.161 7777 "Happy" 4'
+DEBUG : Current hops count for '0037 SER 192.168.0.161 7777 "Happy" 4' is : 4
+INFO : search query file name 0037 SER 192.168.0.161 7777 "Happy" 3
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7777 "Happy" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7777 "Happy" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56945' as '0041 SER 192.168.0.161 7777 "Windows 8" 2'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Windows 8" 2' is : 2
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Windows 8" 1
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 1' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Windows 8" 1' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62995' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59369' as '0044 SER 192.168.0.161 7777 "Supper Mario" 4'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7777 "Supper Mario" 4' is : 4
+INFO : search query file name 0044 SER 192.168.0.161 7777 "Supper Mario" 3
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Supper Mario" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Supper Mario" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55270' as '0044 SER 192.168.0.161 7777 "Supper Mario" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0044 SER 192.168.0.161 7777 "Supper Mario" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50249' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 4'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "Jack and Jill" 4' is : 4
+INFO : search query file name 0045 SER 192.168.0.161 7777 "Jack and Jill" 3
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52762' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57667' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50628' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49840' as '0049 SER 192.168.0.161 7777 "Turn up the Music" 4'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7777 "Turn up the Music" 4' is : 4
+INFO : search query file name 0049 SER 192.168.0.161 7777 "Turn up the Music" 3
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Turn up the Music" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7777 "Turn up the Music" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60065' as '0049 SER 192.168.0.161 7777 "Turn up the Music" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0049 SER 192.168.0.161 7777 "Turn up the Music" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50568' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51059' as '0048 SER 192.168.0.161 7777 "American Pickers" 4'
+INFO : FOUND: File found locally : 0056 SEROK 1 192.168.0.161 7785 "American Pickers" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51908' as '0048 SER 192.168.0.161 7777 "American Pickers" 3'
+INFO : FOUND: File found locally : 0056 SEROK 1 192.168.0.161 7785 "American Pickers" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51709' as '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 4'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 4' is : 4
+INFO : search query file name 0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50713' as '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7777 "Microsoft Office 2010" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60389' as '0040 SER 192.168.0.161 7777 "Twilight" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56193' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Twilight" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59085' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 4'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "Jack and Jill" 4' is : 4
+INFO : search query file name 0045 SER 192.168.0.161 7777 "Jack and Jill" 3
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54381' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62367' as '0036 SER 192.168.0.161 7777 "Jill" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Jill" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Jill" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Jill" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Jill" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58498' as '0036 SER 192.168.0.161 7777 "Jill" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7777 "Jill" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54688' as '0036 SER 192.168.0.161 7777 "Glee" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Glee" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Glee" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Glee" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Glee" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62315' as '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 4'
+DEBUG : Current hops count for '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 4' is : 4
+INFO : search query file name 0050 SER 192.168.0.161 7777 "The Vampire Diarie" 3
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7777 "The Vampire Diarie" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54795' as '0042 SER 192.168.0.161 7777 "King Athor" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "King Athor" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "King Athor" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "King Athor" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "King Athor" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61182' as '0042 SER 192.168.0.161 7777 "King Athor" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0042 SER 192.168.0.161 7777 "King Athor" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65353' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 4'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7777 "Jack and Jill" 4' is : 4
+INFO : search query file name 0045 SER 192.168.0.161 7777 "Jack and Jill" 3
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7777 "Jack and Jill" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57962' as '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7777 "Jack and Jill" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58100' as '0042 SER 192.168.0.161 7777 "Windows XP" 4'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7785 "Windows XP" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50134' as '0042 SER 192.168.0.161 7777 "Windows XP" 3'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7785 "Windows XP" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63082' as '0044 SER 192.168.0.161 7777 "Harry Potter" 4'
+INFO : FOUND: File found locally : 0052 SEROK 1 192.168.0.161 7785 "Harry Potter" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55240' as '0044 SER 192.168.0.161 7777 "Harry Potter" 3'
+INFO : FOUND: File found locally : 0052 SEROK 1 192.168.0.161 7785 "Harry Potter" 3 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7777'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58435' as '0036 SER 192.168.0.161 7777 "Feet" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Feet" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Feet" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62211' as '0044 SER 192.168.0.161 7777 "Kungfu Panda" 4'
+DEBUG : Current hops count for '0044 SER 192.168.0.161 7777 "Kungfu Panda" 4' is : 4
+INFO : search query file name 0044 SER 192.168.0.161 7777 "Kungfu Panda" 3
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64658' as '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0044 SER 192.168.0.161 7777 "Kungfu Panda" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55306' as '0041 SER 192.168.0.161 7777 "Lady Gaga" 4'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Lady Gaga" 4' is : 4
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Lady Gaga" 3
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Lady Gaga" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Lady Gaga" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63553' as '0041 SER 192.168.0.161 7777 "Lady Gaga" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0041 SER 192.168.0.161 7777 "Lady Gaga" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62417' as '0036 SER 192.168.0.161 7777 "Gaga" 4'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7777 "Gaga" 4' is : 4
+INFO : search query file name 0036 SER 192.168.0.161 7777 "Gaga" 3
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Gaga" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7777 "Gaga" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52390' as '0036 SER 192.168.0.161 7777 "Gaga" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7777 "Gaga" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50674' as '0041 SER 192.168.0.161 7777 "Hapy Feet" 4'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7777 "Hapy Feet" 4' is : 4
+INFO : search query file name 0041 SER 192.168.0.161 7777 "Hapy Feet" 3
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Hapy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7777 "Hapy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57815' as '0041 SER 192.168.0.161 7777 "Hapy Feet" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0041 SER 192.168.0.161 7777 "Hapy Feet" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55681' as '0042 SER 192.168.0.161 7777 "Happy Feet" 4'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7777 "Happy Feet" 4' is : 4
+INFO : search query file name 0042 SER 192.168.0.161 7777 "Happy Feet" 3
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7777 "Happy Feet" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53384' as '0040 SER 192.168.0.161 7777 "Twilight" 4'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7777 "Twilight" 4' is : 4
+INFO : search query file name 0040 SER 192.168.0.161 7777 "Twilight" 3
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7777 "Twilight" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49778' as '0040 SER 192.168.0.161 7777 "Twilight" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7777 "Twilight" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60623' as '0039 SER 192.168.0.161 7777 "Hacking" 4'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7777 "Hacking" 4' is : 4
+INFO : search query file name 0039 SER 192.168.0.161 7777 "Hacking" 3
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62564' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7777 "Hacking" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53265' as '0039 SER 192.168.0.161 7777 "Hacking" 4'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7777 "Hacking" 4' is : 4
+INFO : search query file name 0039 SER 192.168.0.161 7777 "Hacking" 3
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 3' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7777 "Hacking" 3' to '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55822' as '0039 SER 192.168.0.161 7777 "Hacking" 3'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7777 "Hacking" 3'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54945' as '0040 SER 192.168.0.161 7779 "Twilight" 5'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 5' is : 5
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 4
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51308' as '0040 SER 192.168.0.161 7779 "Twilight" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7779 "Twilight" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65223' as '0036 SER 192.168.0.161 7779 "Jack" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "Jack" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "Jack" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Jack" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59644' as '0036 SER 192.168.0.161 7779 "Jack" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7779 "Jack" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61420' as '0045 SER 192.168.0.161 7779 "American Idle" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "American Idle" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "American Idle" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idle" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56564' as '0045 SER 192.168.0.161 7779 "American Idle" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "American Idle" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52432' as '0045 SER 192.168.0.161 7779 "American Idol" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "American Idol" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "American Idol" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "American Idol" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57210' as '0045 SER 192.168.0.161 7779 "American Idol" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "American Idol" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58479' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52521' as '0045 SER 192.168.0.161 7779 "Twilight Saga" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "Twilight Saga" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "Twilight Saga" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "Twilight Saga" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52116' as '0045 SER 192.168.0.161 7779 "Twilight Saga" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "Twilight Saga" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60481' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53856' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50391' as '0036 SER 192.168.0.161 7779 "Feet" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "Feet" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "Feet" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62991' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51342' as '0040 SER 192.168.0.161 7779 "Twilight" 5'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 5' is : 5
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 4
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60149' as '0040 SER 192.168.0.161 7779 "Twilight" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7779 "Twilight" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65139' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61014' as '0051 SER 192.168.0.161 7779 "Mission Implossible" 5'
+DEBUG : Current hops count for '0051 SER 192.168.0.161 7779 "Mission Implossible" 5' is : 5
+INFO : search query file name 0051 SER 192.168.0.161 7779 "Mission Implossible" 4
+INFO : SEND: Sending search query '0051 SER 192.168.0.161 7779 "Mission Implossible" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55897' as '0051 SER 192.168.0.161 7779 "Mission Implossible" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0051 SER 192.168.0.161 7779 "Mission Implossible" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65035' as '0040 SER 192.168.0.161 7779 "Twilight" 5'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 5' is : 5
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 4
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60317' as '0040 SER 192.168.0.161 7779 "Twilight" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7779 "Twilight" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61749' as '0035 SER 192.168.0.161 7779 "The" 5'
+DEBUG : Current hops count for '0035 SER 192.168.0.161 7779 "The" 5' is : 5
+INFO : search query file name 0035 SER 192.168.0.161 7779 "The" 4
+INFO : SEND: Sending search query '0035 SER 192.168.0.161 7779 "The" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52715' as '0037 SER 192.168.0.161 7779 "Happy" 5'
+DEBUG : Current hops count for '0037 SER 192.168.0.161 7779 "Happy" 5' is : 5
+INFO : search query file name 0037 SER 192.168.0.161 7779 "Happy" 4
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7779 "Happy" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63761' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:52814' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "Jack and Jill" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "Jack and Jill" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "Jack and Jill" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63590' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "Jack and Jill" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59506' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65071' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63494' as '0049 SER 192.168.0.161 7779 "Turn up the Music" 5'
+DEBUG : Current hops count for '0049 SER 192.168.0.161 7779 "Turn up the Music" 5' is : 5
+INFO : search query file name 0049 SER 192.168.0.161 7779 "Turn up the Music" 4
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7779 "Turn up the Music" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64273' as '0049 SER 192.168.0.161 7779 "Turn up the Music" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0049 SER 192.168.0.161 7779 "Turn up the Music" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49931' as '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 5'
+DEBUG : Current hops count for '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 5' is : 5
+INFO : search query file name 0052 SER 192.168.0.161 7779 "Adventures of Tintin" 4
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7779 "Adventures of Tintin" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61661' as '0042 SER 192.168.0.161 7779 "Happy Feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "Happy Feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "Happy Feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "Happy Feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61527' as '0048 SER 192.168.0.161 7779 "American Pickers" 5'
+INFO : FOUND: File found locally : 0056 SEROK 1 192.168.0.161 7785 "American Pickers" 5 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62568' as '0048 SER 192.168.0.161 7779 "American Pickers" 4'
+INFO : FOUND: File found locally : 0056 SEROK 1 192.168.0.161 7785 "American Pickers" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:55378' as '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 5'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 5' is : 5
+INFO : search query file name 0053 SER 192.168.0.161 7779 "Microfost Office 2010" 4
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62267' as '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7779 "Microfost Office 2010" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:63808' as '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 5'
+DEBUG : Current hops count for '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 5' is : 5
+INFO : search query file name 0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 4
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56273' as '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0053 SER 192.168.0.161 7779 "Microsoft Office 2010" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56965' as '0040 SER 192.168.0.161 7779 "Twilight" 5'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "Twilight" 5' is : 5
+INFO : search query file name 0040 SER 192.168.0.161 7779 "Twilight" 4
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "Twilight" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:56601' as '0040 SER 192.168.0.161 7779 "Twilight" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7779 "Twilight" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53301' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "Jack and Jill" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "Jack and Jill" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "Jack and Jill" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61768' as '0045 SER 192.168.0.161 7779 "Jack and Jill" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "Jack and Jill" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:62602' as '0036 SER 192.168.0.161 7779 "Jill" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "Jill" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "Jill" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Jill" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:60285' as '0036 SER 192.168.0.161 7779 "Jill" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7779 "Jill" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:65024' as '0036 SER 192.168.0.161 7779 "Glee" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "Glee" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "Glee" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "Glee" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57086' as '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 5'
+DEBUG : Current hops count for '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 5' is : 5
+INFO : search query file name 0050 SER 192.168.0.161 7779 "The Vampire Diarie" 4
+INFO : SEND: Sending search query '0050 SER 192.168.0.161 7779 "The Vampire Diarie" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:64725' as '0045 SER 192.168.0.161 7779 "JAck and Jill" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "JAck and Jill" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "JAck and Jill" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "JAck and Jill" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59718' as '0045 SER 192.168.0.161 7779 "JAck and Jill" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "JAck and Jill" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54766' as '0042 SER 192.168.0.161 7779 "windows XP" 5'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7785 "Windows XP" 5 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:49865' as '0042 SER 192.168.0.161 7779 "windows XP" 4'
+INFO : FOUND: File found locally : 0050 SEROK 1 192.168.0.161 7785 "Windows XP" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51802' as '0044 SER 192.168.0.161 7779 "harry potter" 5'
+INFO : FOUND: File found locally : 0052 SEROK 1 192.168.0.161 7785 "Harry Potter" 5 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58983' as '0044 SER 192.168.0.161 7779 "harry potter" 4'
+INFO : FOUND: File found locally : 0052 SEROK 1 192.168.0.161 7785 "Harry Potter" 4 0.0
+INFO : SEND: Search results to originated node '192.168.0.161:7779'
+2021-07-23 12:24:28.083  INFO 1834 --- [nio-7785-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 12:24:28.083  INFO 1834 --- [nio-7785-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 12:24:28.086  INFO 1834 --- [nio-7785-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+INFO : Epoch timestamp in millis: 1627023268112 at DOWNLOAD REQ RECEIVED
+INFO : Requested file size : 9 MB
+INFO : Requested file SHA : 2982a31f159e715b064da9f3f3c3f4c58a295cb77f0147f242f0776c8eccd8bd
+INFO : RECEIVE: Search query received from '/192.168.0.161:64233' as '0036 SER 192.168.0.161 7779 "feet" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "feet" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "feet" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:59116' as '0045 SER 192.168.0.161 7779 "kung fu panda" 5'
+DEBUG : Current hops count for '0045 SER 192.168.0.161 7779 "kung fu panda" 5' is : 5
+INFO : search query file name 0045 SER 192.168.0.161 7779 "kung fu panda" 4
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7779 "kung fu panda" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:51489' as '0045 SER 192.168.0.161 7779 "kung fu panda" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0045 SER 192.168.0.161 7779 "kung fu panda" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50269' as '0041 SER 192.168.0.161 7779 "lady gaga" 5'
+DEBUG : Current hops count for '0041 SER 192.168.0.161 7779 "lady gaga" 5' is : 5
+INFO : search query file name 0041 SER 192.168.0.161 7779 "lady gaga" 4
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7779 "lady gaga" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:54633' as '0041 SER 192.168.0.161 7779 "lady gaga" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0041 SER 192.168.0.161 7779 "lady gaga" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50457' as '0036 SER 192.168.0.161 7779 "gaga" 5'
+DEBUG : Current hops count for '0036 SER 192.168.0.161 7779 "gaga" 5' is : 5
+INFO : search query file name 0036 SER 192.168.0.161 7779 "gaga" 4
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7779 "gaga" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:50140' as '0036 SER 192.168.0.161 7779 "gaga" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0036 SER 192.168.0.161 7779 "gaga" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57358' as '0042 SER 192.168.0.161 7779 "happy feet" 5'
+DEBUG : Current hops count for '0042 SER 192.168.0.161 7779 "happy feet" 5' is : 5
+INFO : search query file name 0042 SER 192.168.0.161 7779 "happy feet" 4
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7779 "happy feet" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:57114' as '0040 SER 192.168.0.161 7779 "twilight" 5'
+DEBUG : Current hops count for '0040 SER 192.168.0.161 7779 "twilight" 5' is : 5
+INFO : search query file name 0040 SER 192.168.0.161 7779 "twilight" 4
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7779 "twilight" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:61547' as '0040 SER 192.168.0.161 7779 "twilight" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0040 SER 192.168.0.161 7779 "twilight" 4'
+INFO : RECEIVE: Search query received from '/192.168.0.161:53744' as '0039 SER 192.168.0.161 7779 "hacking" 5'
+DEBUG : Current hops count for '0039 SER 192.168.0.161 7779 "hacking" 5' is : 5
+INFO : search query file name 0039 SER 192.168.0.161 7779 "hacking" 4
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7779 "hacking" 4' to '192.168.0.161:7784'
+INFO : RECEIVE: Search query received from '/192.168.0.161:58036' as '0039 SER 192.168.0.161 7779 "hacking" 4'
+DEBUG : DROP: Query already received within 0 sec, hence dropping '0039 SER 192.168.0.161 7779 "hacking" 4'
+twilight
+INFO : Epoch timestamp in millis: 1627023447651 at Query start
+DEBUG : Query : twilight
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 5
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:56045' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023447661 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023447976 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023447977 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:64364' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53440' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57628' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65323' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59487' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52187' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64097' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+jack
+INFO : Epoch timestamp in millis: 1627023463075 at Query start
+DEBUG : Query : jack
+INFO : search query file name 0036 SER 192.168.0.161 7785 "jack" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "jack" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "jack" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:52410' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023463081 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023463356 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023463356 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:63043' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50889' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56647' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59153' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55976' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54372' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52022' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65501' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+american idol
+INFO : Epoch timestamp in millis: 1627023487105 at Query start
+DEBUG : Query : american idol
+INFO : search query file name 0045 SER 192.168.0.161 7785 "american idol" 5
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "american idol" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "american idol" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:52019' as '0053 SEROK 1 192.168.0.161 7775 "American Idol" 3 0.0'
+INFO : Epoch timestamp in millis: 1627023487112 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023487447 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '2' received '0053 SEROK 1 192.168.0.161 7775 "American Idol" 3 0.0'
+INFO : Epoch timestamp in millis: 1627023487448 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:64467' as '0053 SEROK 1 192.168.0.161 7774 "American Idol" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7774 "American Idol" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60649' as '0053 SEROK 1 192.168.0.161 7774 "American Idol" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7774 "American Idol" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52327' as '0053 SEROK 1 192.168.0.161 7780 "American Idol" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7780 "American Idol" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55421' as '0053 SEROK 1 192.168.0.161 7775 "American Idol" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7775 "American Idol" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52723' as '0053 SEROK 1 192.168.0.161 7775 "American Idol" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7775 "American Idol" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65443' as '0053 SEROK 1 192.168.0.161 7774 "American Idol" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '2 for '0053 SEROK 1 192.168.0.161 7774 "American Idol" 2 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023506961 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:56334' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023506965 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023507230 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023507230 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56041' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63849' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58797' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57932' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52262' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023526216 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:60798' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023526221 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023526450 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023526450 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:65427' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60250' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60997' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54290' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53539' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023539720 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:59510' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023539723 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023539943 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023539943 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:55187' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56675' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60715' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53858' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58675' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+feet
+INFO : Epoch timestamp in millis: 1627023548833 at Query start
+DEBUG : Query : feet
+INFO : search query file name 0036 SER 192.168.0.161 7785 "feet" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:58623' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023548837 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023549092 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023549092 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:50457' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023549092 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:52724' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51689' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60113' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50119' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023560879 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:53560' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023560884 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023561104 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023561104 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:52925' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64129' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56182' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62109' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49798' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+twilight
+INFO : Epoch timestamp in millis: 1627023574191 at Query start
+DEBUG : Query : twilight
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 5
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:51404' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023574195 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023574436 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023574436 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56943' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50321' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58593' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54760' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49715' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64405' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57115' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+windows
+INFO : Epoch timestamp in millis: 1627023590190 at Query start
+DEBUG : Query : windows
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Windows XP]'
+INFO : Enter a query : 
+happy feet
+INFO : Epoch timestamp in millis: 1627023597614 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:52244' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023597618 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023597837 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023597837 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:65101' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53012' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50691' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59232' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63176' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+mission impossible
+INFO : Epoch timestamp in millis: 1627023611325 at Query start
+DEBUG : Query : mission impossible
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Mission Impossible]'
+INFO : Enter a query : 
+twilight
+INFO : Epoch timestamp in millis: 1627023626469 at Query start
+DEBUG : Query : twilight
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 5
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:49744' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023626474 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023626675 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023626675 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:64302' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55104' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56054' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58943' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51331' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61405' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55511' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+windows 8
+INFO : Epoch timestamp in millis: 1627023641901 at Query start
+DEBUG : Query : windows 8
+INFO : search query file name 0041 SER 192.168.0.161 7785 "windows 8" 5
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:54438' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023641904 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023642155 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023642156 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:58020' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58404' as '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64133' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57995' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53469' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58480' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57834' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55685' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60900' as '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59069' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 0 0.0'
+the
+INFO : Epoch timestamp in millis: 1627023687811 at Query start
+DEBUG : Query : the
+INFO : search query file name 0035 SER 192.168.0.161 7785 "the" 5
+INFO : SEND: Sending search query '0035 SER 192.168.0.161 7785 "the" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0035 SER 192.168.0.161 7785 "the" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:64641' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023687815 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023688052 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023688052 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:63688' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54657' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63282' as '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59877' as '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58758' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59412' as '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59767' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61332' as '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 2 0.0'
+happy
+INFO : Epoch timestamp in millis: 1627023714363 at Query start
+DEBUG : Query : happy
+INFO : search query file name 0037 SER 192.168.0.161 7785 "happy" 5
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7785 "happy" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0037 SER 192.168.0.161 7785 "happy" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:55337' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023714367 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023714593 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023714593 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:49442' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023714593 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56110' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58299' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52094' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58106' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+windows 8
+INFO : Epoch timestamp in millis: 1627023734538 at Query start
+DEBUG : Query : windows 8
+INFO : search query file name 0041 SER 192.168.0.161 7785 "windows 8" 5
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "windows 8" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:51701' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023734541 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023734799 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023734799 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:64255' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63219' as '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56280' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56634' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54216' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65514' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55543' as '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7779 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65508' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53231' as '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7786 "Windows 8" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50107' as '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0049 SEROK 1 192.168.0.161 7774 "Windows 8" 0 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023780633 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:51131' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023780636 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023780898 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023780898 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:49757' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58130' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52829' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55908' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51425' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+super mario
+INFO : Epoch timestamp in millis: 1627023794960 at Query start
+DEBUG : Query : super mario
+INFO : search query file name 0043 SER 192.168.0.161 7785 "super mario" 5
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "super mario" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "super mario" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:64751' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023794963 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023795181 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023795181 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56556' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50500' as '0051 SEROK 1 192.168.0.161 7786 "Super Mario" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7786 "Super Mario" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56655' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56983' as '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49888' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55242' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62315' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49210' as '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57699' as '0051 SEROK 1 192.168.0.161 7777 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7777 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53178' as '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58900' as '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+jack and jill
+INFO : Epoch timestamp in millis: 1627023872686 at Query start
+DEBUG : Query : jack and jill
+INFO : search query file name 0045 SER 192.168.0.161 7785 "jack and jill" 5
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:60423' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023872691 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023872909 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023872909 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:61436' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60322' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64955' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54490' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57243' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50709' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63454' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57402' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627023896278 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:50897' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023896282 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023896513 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023896513 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:51183' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58220' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57157' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56805' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49619' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+impossible
+INFO : Epoch timestamp in millis: 1627023919045 at Query start
+DEBUG : Query : impossible
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Mission Impossible]'
+INFO : Enter a query : 
+happy feet
+INFO : Epoch timestamp in millis: 1627023932348 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:57162' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023932352 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023932572 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023932572 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:63693' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64579' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62658' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63687' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49902' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+turn up the music
+INFO : Epoch timestamp in millis: 1627023953332 at Query start
+DEBUG : Query : turn up the music
+INFO : search query file name 0049 SER 192.168.0.161 7785 "turn up the music" 5
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7785 "turn up the music" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0049 SER 192.168.0.161 7785 "turn up the music" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:56925' as '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023953338 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023953585 at DOWNLOAD SUCCESSFUL
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 4 0.0'
+INFO : Epoch timestamp in millis: 1627023953585 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:54620' as '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59467' as '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52425' as '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56556' as '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63635' as '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58674' as '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7776 "Turn Up The Music" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53316' as '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7780 "Turn Up The Music" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61583' as '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0057 SEROK 1 192.168.0.161 7781 "Turn Up The Music" 1 0.0'
+adventures of tintin
+INFO : Epoch timestamp in millis: 1627023980651 at Query start
+DEBUG : Query : adventures of tintin
+INFO : search query file name 0052 SER 192.168.0.161 7785 "adventures of tintin" 5
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7785 "adventures of tintin" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0052 SER 192.168.0.161 7785 "adventures of tintin" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:59966' as '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023980655 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627023980888 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 5 0.0'
+INFO : Epoch timestamp in millis: 1627023980888 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:60946' as '0060 SEROK 1 192.168.0.161 7777 "Adventures of Tintin" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7777 "Adventures of Tintin" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60268' as '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64826' as '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53287' as '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53655' as '0060 SEROK 1 192.168.0.161 7780 "Adventures of Tintin" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7780 "Adventures of Tintin" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61649' as '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7775 "Adventures of Tintin" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53433' as '0060 SEROK 1 192.168.0.161 7780 "Adventures of Tintin" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7780 "Adventures of Tintin" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56931' as '0060 SEROK 1 192.168.0.161 7777 "Adventures of Tintin" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7777 "Adventures of Tintin" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58617' as '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0060 SEROK 1 192.168.0.161 7784 "Adventures of Tintin" 2 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627024007050 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:52843' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024007054 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024007291 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024007291 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:51477' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60835' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56917' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62479' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53642' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+super mario
+INFO : Epoch timestamp in millis: 1627024023426 at Query start
+DEBUG : Query : super mario
+INFO : search query file name 0043 SER 192.168.0.161 7785 "super mario" 5
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "super mario" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "super mario" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:58369' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024023429 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024023672 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024023672 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56486' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54119' as '0051 SEROK 1 192.168.0.161 7786 "Super Mario" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7786 "Super Mario" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60393' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50177' as '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51775' as '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7779 "Super Mario" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60394' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58606' as '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63263' as '0051 SEROK 1 192.168.0.161 7777 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7777 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64657' as '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7783 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62648' as '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7776 "Super Mario" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58675' as '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0051 SEROK 1 192.168.0.161 7782 "Super Mario" 1 0.0'
+american pickers
+INFO : Epoch timestamp in millis: 1627024057720 at Query start
+DEBUG : Query : american pickers
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[American Pickers]'
+INFO : Enter a query : 
+microdoft office 2010
+INFO : Epoch timestamp in millis: 1627024073896 at Query start
+DEBUG : Query : microdoft office 2010
+INFO : search query file name 0053 SER 192.168.0.161 7785 "microdoft office 2010" 5
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microdoft office 2010" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microdoft office 2010" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+microsoft office 2010
+INFO : Epoch timestamp in millis: 1627024082696 at Query start
+DEBUG : Query : microsoft office 2010
+INFO : search query file name 0053 SER 192.168.0.161 7785 "microsoft office 2010" 5
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microsoft office 2010" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0053 SER 192.168.0.161 7785 "microsoft office 2010" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:50134' as '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 3 0.0'
+INFO : Epoch timestamp in millis: 1627024082701 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024082957 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '2' received '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 3 0.0'
+INFO : Epoch timestamp in millis: 1627024082957 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:51595' as '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '2 for '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59902' as '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '2 for '0061 SEROK 1 192.168.0.161 7780 "Microsoft Office 2010" 1 0.0'
+twilight
+INFO : Epoch timestamp in millis: 1627024101335 at Query start
+DEBUG : Query : twilight
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 5
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:63397' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024101339 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024101564 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024101564 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:63366' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61626' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65229' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56695' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54343' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63724' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62828' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+modern family
+INFO : Epoch timestamp in millis: 1627024123215 at Query start
+DEBUG : Query : modern family
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Modern Family]'
+INFO : Enter a query : 
+jack and jill
+INFO : Epoch timestamp in millis: 1627024139070 at Query start
+DEBUG : Query : jack and jill
+INFO : search query file name 0045 SER 192.168.0.161 7785 "jack and jill" 5
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:56984' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024139076 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024139309 at DOWNLOAD SUCCESSFUL
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024139310 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:62761' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59883' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61341' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55533' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51823' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63872' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:52680' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64259' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+jill
+INFO : Epoch timestamp in millis: 1627024160533 at Query start
+DEBUG : Query : jill
+INFO : search query file name 0036 SER 192.168.0.161 7785 "jill" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "jill" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "jill" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:65493' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024160537 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024160756 at DOWNLOAD SUCCESSFUL
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024160756 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:55205' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:62807' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60038' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63659' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53696' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:65375' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56337' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58040' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+glee
+INFO : Epoch timestamp in millis: 1627024185286 at Query start
+DEBUG : Query : glee
+INFO : search query file name 0036 SER 192.168.0.161 7785 "glee" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "glee" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "glee" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:50628' as '0044 SEROK 1 192.168.0.161 7784 "Glee" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024185290 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024185546 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0044 SEROK 1 192.168.0.161 7784 "Glee" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024185546 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:63579' as '0044 SEROK 1 192.168.0.161 7784 "Glee" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7784 "Glee" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51743' as '0044 SEROK 1 192.168.0.161 7774 "Glee" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7774 "Glee" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55516' as '0044 SEROK 1 192.168.0.161 7774 "Glee" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7774 "Glee" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60481' as '0044 SEROK 1 192.168.0.161 7786 "Glee" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7786 "Glee" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49473' as '0044 SEROK 1 192.168.0.161 7774 "Glee" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7774 "Glee" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51169' as '0044 SEROK 1 192.168.0.161 7782 "Glee" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7782 "Glee" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50726' as '0044 SEROK 1 192.168.0.161 7784 "Glee" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7784 "Glee" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55128' as '0044 SEROK 1 192.168.0.161 7783 "Glee" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0044 SEROK 1 192.168.0.161 7783 "Glee" 2 0.0'
+vampire diarie
+INFO : Epoch timestamp in millis: 1627024220466 at Query start
+DEBUG : Query : vampire diarie
+INFO : search query file name 0046 SER 192.168.0.161 7785 "vampire diarie" 5
+INFO : SEND: Sending search query '0046 SER 192.168.0.161 7785 "vampire diarie" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0046 SER 192.168.0.161 7785 "vampire diarie" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:61604' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024220470 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024220686 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024220686 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:65042' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63414' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60460' as '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50595' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54176' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:54133' as '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59772' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:50925' as '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7778 "The Vampire Diarie" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53495' as '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7784 "The Vampire Diarie" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57046' as '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63899' as '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+INFO : IGNORE: Number of hops '5' exceeds or equal to the current best hops count '0 for '0058 SEROK 1 192.168.0.161 7774 "The Vampire Diarie" 0 0.0'
+king arthur
+INFO : Epoch timestamp in millis: 1627024276642 at Query start
+DEBUG : Query : king arthur
+INFO : search query file name 0043 SER 192.168.0.161 7785 "king arthur" 5
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "king arthur" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "king arthur" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:65380' as '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024276644 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024276883 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024276883 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:55407' as '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024276884 at RESULT
+jack and jill
+INFO : Epoch timestamp in millis: 1627024306409 at Query start
+DEBUG : Query : jack and jill
+INFO : search query file name 0045 SER 192.168.0.161 7785 "jack and jill" 5
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "jack and jill" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:61737' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024306415 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024306641 at DOWNLOAD SUCCESSFUL
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024306641 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:54180' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55053' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56298' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53167' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55021' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64080' as '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7783 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63110' as '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7778 "Jack and Jill" 1 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:61507' as '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7782 "Jack and Jill" 1 0.0'
+king arthur
+INFO : Epoch timestamp in millis: 1627024360561 at Query start
+DEBUG : Query : king arthur
+INFO : search query file name 0043 SER 192.168.0.161 7785 "king arthur" 5
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "king arthur" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0043 SER 192.168.0.161 7785 "king arthur" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:58143' as '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024360563 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024360796 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024360796 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:50726' as '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024360796 at RESULT
+windows xp
+INFO : Epoch timestamp in millis: 1627024380874 at Query start
+DEBUG : Query : windows xp
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Windows XP]'
+INFO : Enter a query : 
+harry potter
+INFO : Epoch timestamp in millis: 1627024389984 at Query start
+DEBUG : Query : harry potter
+INFO : FOUND: Searched file found in current node '192.168.0.161:7785' as '[Harry Potter]'
+INFO : Enter a query : 
+feet
+INFO : Epoch timestamp in millis: 1627024396247 at Query start
+DEBUG : Query : feet
+INFO : search query file name 0036 SER 192.168.0.161 7785 "feet" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:56500' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024396252 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024396471 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024396471 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:57408' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RESULT: With less number of hops '1' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024396471 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:60795' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:49727' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57775' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59352' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+kung fu panda
+INFO : Epoch timestamp in millis: 1627024418463 at Query start
+DEBUG : Query : kung fu panda
+INFO : search query file name 0045 SER 192.168.0.161 7785 "kung fu panda" 5
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "kung fu panda" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0045 SER 192.168.0.161 7785 "kung fu panda" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:53500' as '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024418468 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024418740 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024418740 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:50450' as '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60545' as '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59687' as '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0053 SEROK 1 192.168.0.161 7777 "Kung Fu Panda" 2 0.0'
+lady gaga
+INFO : Epoch timestamp in millis: 1627024437223 at Query start
+DEBUG : Query : lady gaga
+INFO : search query file name 0041 SER 192.168.0.161 7785 "lady gaga" 5
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "lady gaga" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0041 SER 192.168.0.161 7785 "lady gaga" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:58533' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024437228 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024437457 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024437457 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:56761' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:60360' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55557' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:51740' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59439' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59233' as '0049 SEROK 1 192.168.0.161 7780 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7780 "Lady Gaga" 2 0.0'
+gaga
+INFO : Epoch timestamp in millis: 1627024451534 at Query start
+DEBUG : Query : gaga
+INFO : search query file name 0036 SER 192.168.0.161 7785 "gaga" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "gaga" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "gaga" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:49633' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024451539 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024451771 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024451771 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:57322' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55267' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59794' as '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7778 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:59645' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:56357' as '0049 SEROK 1 192.168.0.161 7780 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7780 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7780 "Lady Gaga" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55855' as '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0049 SEROK 1 192.168.0.161 7774 "Lady Gaga" 2 0.0'
+happy feet
+INFO : Epoch timestamp in millis: 1627024471262 at Query start
+DEBUG : Query : happy feet
+INFO : search query file name 0042 SER 192.168.0.161 7785 "happy feet" 5
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0042 SER 192.168.0.161 7785 "happy feet" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:60834' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024471266 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024471468 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024471468 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:51275' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : IGNORE: Number of hops '1' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 4 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58346' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64824' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64304' as '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7784 "Happy Feet" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53765' as '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '0 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0050 SEROK 1 192.168.0.161 7781 "Happy Feet" 1 0.0'
+twilight
+INFO : Epoch timestamp in millis: 1627024491189 at Query start
+DEBUG : Query : twilight
+INFO : search query file name 0040 SER 192.168.0.161 7785 "twilight" 5
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0040 SER 192.168.0.161 7785 "twilight" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:61971' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024491195 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024491423 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '1' received '0048 SEROK 1 192.168.0.161 7781 "Twilight" 4 0.0'
+INFO : Epoch timestamp in millis: 1627024491423 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:57071' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:58542' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : IGNORE: Number of hops '2' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 3 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:64442' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:63831' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:55120' as '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7776 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:57554' as '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : IGNORE: Number of hops '3' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7782 "Twilight" 2 0.0'
+INFO : RECEIVE: Search results received from '/192.168.0.161:53742' as '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+INFO : IGNORE: Number of hops '4' exceeds or equal to the current best hops count '1 for '0048 SEROK 1 192.168.0.161 7781 "Twilight" 1 0.0'
+hacking
+INFO : Epoch timestamp in millis: 1627024508901 at Query start
+DEBUG : Query : hacking
+INFO : search query file name 0039 SER 192.168.0.161 7785 "hacking" 5
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7785 "hacking" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0039 SER 192.168.0.161 7785 "hacking" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+king
+INFO : Epoch timestamp in millis: 1627024511701 at Query start
+DEBUG : Query : king
+INFO : search query file name 0036 SER 192.168.0.161 7785 "king" 5
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "king" 5' to '192.168.0.161:7784'
+INFO : SEND: Sending search query '0036 SER 192.168.0.161 7785 "king" 5' to '192.168.0.161:7779'
+INFO : Enter a query : 
+INFO : RECEIVE: Search results received from '/192.168.0.161:51914' as '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024511703 at DOWNLOAD START REQUEST
+INFO : Requested file downloaded successfully.
+INFO : Epoch timestamp in millis: 1627024511917 at DOWNLOAD SUCCESSFUL
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7784 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024511917 at RESULT
+INFO : RECEIVE: Search results received from '/192.168.0.161:58995' as '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : RESULT: With less number of hops '0' received '0051 SEROK 1 192.168.0.161 7779 "King Arthur" 5 0.0'
+INFO : Epoch timestamp in millis: 1627024511917 at RESULT
