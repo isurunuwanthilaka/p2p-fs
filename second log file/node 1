@@ -1,0 +1,16 @@
+leave
+INFO : Epoch timestamp in millis: 1627030013948 at Query start
+INFO : SEND: Leave message to '192.168.0.161:7775'
+INFO : RECEIVE: 0014 LEAVEOK 0 from '192.168.0.161:7775'
+INFO : SEND: Leave message to '192.168.0.161:7776'
+INFO : RECEIVE: 0014 LEAVEOK 0 from '192.168.0.161:7776'
+INFO : SEND: Leave message to '192.168.0.161:7778'
+INFO : RECEIVE: 0014 LEAVEOK 0 from '192.168.0.161:7778'
+INFO : SEND: Leave message to '192.168.0.161:7782'
+INFO : RECEIVE: 0014 LEAVEOK 0 from '192.168.0.161:7782'
+INFO : SEND: Leave message to '192.168.0.161:7783'
+INFO : RECEIVE: 0014 LEAVEOK 0 from '192.168.0.161:7783'
+INFO : SEND: Bootstrap server un-register message '0038 UNREG 192.168.0.161 7774 node7774'
+INFO : RECEIVE: Bootstrap server response '0012 UNROK 0'
+
+Process finished with exit code 0
