@@ -36,7 +36,6 @@ public class Node {
     public static final int default_hops_count = 5;
 
     private List<Peer> routingTable = new ArrayList<>();
-    private List<Forum> forumList = new ArrayList<>();
     private String[] fileList;
     private String bootstrapIp;
     private int bootstrapPort;
@@ -97,10 +96,6 @@ public class Node {
 
     public int getHopsCount() {
         return hopsCount;
-    }
-
-    public List<Forum> getForumList() {
-        return forumList;
     }
 
     public Long setCurrentTimestamp(Long timestamp) {
@@ -230,80 +225,6 @@ public class Node {
             }
 
             log(DEBUG, "Query : " + query);
-
-            //RANK "Kung fu panda" 4
-            if (query.startsWith(RANK)) {
-                String[] messages = splitIncomingMessage(query);
-                String resourceName = getResourceNameFromSearchQuery(messages[1]);
-                List<String> fileSearchResultsList = searchInCurrentFileList(resourceName);
-
-                if (fileSearchResultsList.size() > 0) {
-                    log(INFO, "FOUND: Ranking file found in current node '" + nodeIp + ":" + nodePort + "' as '" +
-                            fileSearchResultsList + "'");
-                    continue;
-                }
-
-                String[] resources = resourceName.split(" ");
-                if (resources.length > 1) {
-                    Forum forum = getMatchingForumFromTheList(resources[0], resources[1]);
-                    if (resources[0].equals(nodeIp + ":" + nodePort) && forum != null) {
-                        log(INFO, "FOUND: Ranking forum found in current node '" + nodeIp + ":" + nodePort + "' as '" +
-                                fileSearchResultsList + "'");
-                        continue;
-                    }
-                }
-
-                String rankMessage = prependLengthToMessage("RANK " + nodeIp + ":" + nodePort + " " + messages[1] +
-                        " " + messages[2]);
-                addToReceivedRankMessageMap(rankMessage, System.currentTimeMillis());
-                sendRankingMessageToPeers(rankMessage);
-                continue;
-            } else if (query.startsWith(COM + " ")) {
-                //COM "Should the vehicle prices be increased again?"
-                String[] messages = splitIncomingMessage(query);
-
-                Long currentTime = getCurrentTimestamp();
-                currentTime = setCurrentTimestamp(currentTime);
-
-                Forum forum = addToCurrentForumList(messages[1], currentTime.toString(), nodeIp + ":" + nodePort);
-
-                String forumCreationMessage = "COM " + nodeIp + ":" + nodePort + " " + forum.getCommentTime() +
-                        " " + forum.getComment();
-
-                addToReceivedForumMessageMap(forumCreationMessage, System.currentTimeMillis());
-
-                forumCreationMessage = prependLengthToMessage(forumCreationMessage + " " + currentTime.toString());
-                sendForumInitiationMessageToPeers(forumCreationMessage);
-                printForumList();
-                continue;
-            } else if (query.startsWith(COMRPLY + " ")) {
-                // COMRPLY 10.100.1.124:10973 9 "Yes, it should be increased"
-                String[] messages = splitIncomingMessage(query);
-
-                Long currentTime = getCurrentTimestamp();
-                currentTime = setCurrentTimestamp(currentTime);
-
-                Forum forum = addForumReplyToCurrentForumList(messages[3], nodeIp + ":" + nodePort,
-                        currentTime.toString(), messages[1], messages[2], true);
-
-                String forumReplyMessage = "COMRPLY " + messages[1] + " " + messages[2] + " " + nodeIp + ":" +
-                        nodePort + " " + currentTime.toString() + " " + messages[3];
-
-                if (forum != null) {
-                    forumReplyMessage = forumReplyMessage + " " + VERIFIED;
-                } else {
-                    forumReplyMessage = forumReplyMessage + " " + UNVERIFIED;
-                }
-
-                log(INFO, "Forum reply mesage : " + forumReplyMessage);
-                addToReceivedForumReplyMessageMap(forumReplyMessage, System.currentTimeMillis());
-
-                forumReplyMessage = prependLengthToMessage(forumReplyMessage + " " + currentTime.toString());
-
-                sendForumReplyMessageToPeers(forumReplyMessage);
-                printForumList();
-                continue;
-            }
 
             //search its own list first
             List<String> searchedFiles = searchInCurrentFileList(query);
@@ -597,86 +518,7 @@ public class Node {
         return queriedFileList;
     }
 
-    public Forum getMatchingForumFromTheList(String ownerIp, String commentTime) {
-        Forum forum = null;
-        for (Forum tempForum : getForumList()) {
-            if (tempForum.getCommentTime().equals(commentTime) &&
-                    tempForum.getOwnerIp().equals(ownerIp)) {
-                forum = tempForum;
-            }
-        }
-        return forum;
-    }
 
-    public Forum addToCurrentForumList(String comment, String commentTime, String ownerIp) {
-        Forum forum = getMatchingForumFromTheList(commentTime, ownerIp);
-
-        if (forum == null) {
-            forum = new Forum(comment, commentTime, ownerIp);
-            this.forumList.add(forum);
-        }
-        return forum;
-    }
-
-    public void updateCurrentForumList(Forum forumToUpdate) {
-        Boolean isForumUpdated = false;
-        Forum forum = null;
-        for (Forum temforum : getForumList()) {
-            if (temforum.getCommentTime() == forumToUpdate.getCommentTime() &&
-                    temforum.getOwnerIp() == forumToUpdate.getOwnerIp()
-            ) {
-                forum = temforum;
-                break;
-            }
-        }
-
-        if (forum != null) {
-            int index = this.forumList.indexOf(forum);
-            this.forumList.remove(index);
-            this.forumList.add(index, forumToUpdate);
-            isForumUpdated = true;
-        }
-
-        if (!isForumUpdated) {
-            log(INFO, "No matching forum to update");
-        }
-    }
-
-    public void printForumList() {
-        log(null, "");
-        log(INFO, "Forum List");
-        for (Forum temforum : getForumList()) {
-            log(null, temforum.getComment() + " " + temforum.getCommentTime() + " " + temforum.getOwnerIp());
-            for (ForumReply forumReply : temforum.getForumReply()) {
-                log(INDENT, forumReply.getComment() + " " + forumReply.getCommentTime() + " " + forumReply.getOwnerIp());
-            }
-        }
-        log(null, "");
-    }
-
-    public Forum addForumReplyToCurrentForumList(String reply, String replyOwnerIp, String replyTime, String forumOwnerIp, String forumTime, Boolean addIfOnlyForumOriginator) {
-
-        Forum forum = null;
-        if (addIfOnlyForumOriginator) {
-            if (forumOwnerIp.equals((nodeIp + ":" + nodePort))) {
-                log(INFO, "Reply to forum initiated by same node : " + nodeIp + ":" + nodePort + " => " + forumOwnerIp);
-                forum = getMatchingForumFromTheList(forumOwnerIp, forumTime);
-                ForumReply forumReply = new ForumReply(reply, replyTime, replyOwnerIp);
-                forum.addForumReply(forumReply);
-                log(INFO, "Matching forum found: " + forum.getComment());
-                updateCurrentForumList(forum);
-            }
-        } else {
-            log(INFO, "Initiated by another forum:" + nodeIp + ":" + nodePort + " => " + forumOwnerIp);
-            forum = getMatchingForumFromTheList(forumOwnerIp, forumTime);
-            ForumReply forumReply = new ForumReply(reply, replyTime, replyOwnerIp);
-            forum.addForumReply(forumReply);
-            updateCurrentForumList(forum);
-        }
-
-
-        return forum;
-    }
 
     public Map<String, Integer> getSentSearchQueryMap() {
         return sentSearchQueryMap;
@@ -885,120 +727,6 @@ class NodeThread extends Thread {
 //                    message - 0066 SEROK 2 10.100.1.124 11001 "American Pickers American Idol" 2
                     int currentHopCount = Integer.parseInt(response[6]);
                     checkForBestResult(node, incomingMessage, response[5], currentHopCount);
-                } else if (response.length >= 4 && Node.RANK.equals(response[1])) {
-                    Node.log(INFO, "RECEIVE: Rank query received from '" + responseAddress + ":" + responsePort +
-                            "' as '" + incomingMessage + "'");
-
-                    if (node.getReceivedRankMessageMap().containsKey(incomingMessage)) {
-                        long timeInterval = System.currentTimeMillis() -
-                                node.getReceivedRankMessageMap().get(incomingMessage);
-
-                        if (timeInterval < 2000) {
-                            Node.log(DEBUG, "DROP: DUPLICATE: Rank message already sent " + (0.005 * timeInterval) +
-                                    " sec before, hence dropping '" + incomingMessage + "'");
-                            continue;
-                        }
-                        node.removeFromReceivedRankMessageMap(incomingMessage);
-                    }
-
-                    //0018 RANK 129.82.123.45 "Kung fu panda" 4
-                    String resourceToRank = getResourceNameFromSearchQuery(response[3]);
-                    List<String> fileSearchResultsList = node.searchInCurrentFileList(resourceToRank);
-                    boolean isForumInCurrentNode = false;
-                    //0018 RANK 129.82.123.45 "129.12.1.13:9876 3" 4
-                    String[] resources = resourceToRank.split(" ");
-                    if (resources.length > 1) {
-                        Forum forum = node.getMatchingForumFromTheList(resources[0], resources[1]);
-                        if (resources[0].equals(node.getNodeIp() + ":" + node.getNodePort()) && forum != null) {
-                            isForumInCurrentNode = true;
-                        }
-                    }
-
-                    if (fileSearchResultsList.size() > 0 || isForumInCurrentNode) {
-                        int suggestedRank = Integer.parseInt(response[4]);
-                        String ranker = response[2];
-                        double newRanking = node.rankResource(incomingMessage, resourceToRank, ranker, suggestedRank);
-                        Node.log(INFO, "RANK : '" + resourceToRank + "' - '" + newRanking + "'");
-                    } else {
-                        node.addToReceivedRankMessageMap(incomingMessage, System.currentTimeMillis());
-                        node.sendRankingMessageToPeers(incomingMessage);
-                    }
-                } else if (response.length >= 4 && Node.COM.equals(response[1])) {
-                    Node.log(INFO, "RECEIVE: Forum query received from '" + responseAddress + ":" + responsePort +
-                            "' as '" + incomingMessage + "'");
-
-                    incomingMessage = removeLengthAndTimestampFromMessage(incomingMessage);
-                    if (node.getReceivedForumMessageMap().containsKey(incomingMessage)) {
-                        long timeInterval = System.currentTimeMillis() - node.getReceivedForumMessageMap().get(incomingMessage);
-
-                        if (timeInterval < 2000) {
-                            Node.log(DEBUG, "DROP: DUPLICATE: COM message already sent " + (0.005 * timeInterval) +
-                                    " sec before, hence dropping '" + incomingMessage + "'");
-                            continue;
-                        }
-                        node.removeFromReceivedForumMessageMap(incomingMessage);
-                    }
-
-                    //0018 RANK 129.82.123.45 "Kung fu panda" 4
-
-                    /*String fileToRank = getResourceNameFromSearchQuery(response[3]);
-                    List<String> fileSearchResultsList = node.searchInCurrentFileList(fileToRank);
-*/
-                    /*if (fileSearchResultsList.size() > 0) {
-                        int suggestedRank = Integer.parseInt(response[4]);
-                        String ranker = response[2];
-                        double newRanking = node.rankResource(incomingMessage, fileToRank, ranker, suggestedRank);
-                        Node.log(INFO, "RANK : '" + fileToRank + "' - '" + newRanking + "'");
-                    } else {*/
-                    //node.addToReceivedRankMessageMap(incomingMessage, System.currentTimeMillis());
-
-                    //}
-                    node.addToCurrentForumList(response[4], response[3], response[2]);
-                    node.addToReceivedForumMessageMap(incomingMessage, System.currentTimeMillis());
-
-                    Long currentTime = node.setCurrentTimestamp(Long.parseLong(response[5]));
-                    incomingMessage = node.prependLengthToMessage(incomingMessage + " " + currentTime.toString());
-
-                    node.sendForumInitiationMessageToPeers(incomingMessage);
-                    node.printForumList();
-
-                } else if (response.length >= 4 && Node.COMRPLY.equals(response[1])) {
-                    Node.log(INFO, "RECEIVE: Forum reply received from '" + responseAddress + ":" + responsePort +
-                            "' as '" + incomingMessage + "'");
-
-                    incomingMessage = removeLengthAndTimestampFromMessage(incomingMessage);
-
-                    if (node.getReceivedForumReplyMessageMap().containsKey(incomingMessage)) {
-                        long timeInterval = System.currentTimeMillis() - node.getReceivedForumReplyMessageMap().get(incomingMessage);
-
-                        if (timeInterval < 2000) {
-                            Node.log(DEBUG, "DROP: DUPLICATE: COMRPLY message already sent " + (0.005 * timeInterval) +
-                                    " sec before, hence dropping '" + incomingMessage + "'");
-                            continue;
-                        }
-                        node.removeFromReceivedForumReplyMessageMap(incomingMessage);
-                    }
-
-//                    Boolean addIfFromOriginator = null;
-                    boolean addIfFromOriginator = !Node.VERIFIED.equals(response[7]);
-
-                    Forum forum = node.addForumReplyToCurrentForumList(response[6], response[4], response[5],
-                            response[2], response[3], addIfFromOriginator);
-
-                    node.addToReceivedForumReplyMessageMap(incomingMessage, System.currentTimeMillis());
-
-                    if (Node.UNVERIFIED.equals(response[7]) && forum != null) {
-                        incomingMessage = incomingMessage.replace(Node.UNVERIFIED, Node.VERIFIED);
-                    }
-
-                    node.addToReceivedForumReplyMessageMap(incomingMessage, System.currentTimeMillis());
-
-                    Long currentTime = node.setCurrentTimestamp(Long.parseLong(response[8]));
-                    incomingMessage = node.prependLengthToMessage(incomingMessage + " " + currentTime.toString());
-
-                    node.sendForumReplyMessageToPeers(incomingMessage);
-                    node.printForumList();
-
                 }
 
                 if (sendData != null) {
