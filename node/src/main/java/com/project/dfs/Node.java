@@ -53,10 +53,6 @@ public class Node {
 
     private Map<String, Long> receivedRankMessageMap = new ConcurrentHashMap<>();
 
-    private Map<String, Long> receivedForumMessageMap = new ConcurrentHashMap<>();
-
-    private Map<String, Long> receivedForumReplyMessageMap = new ConcurrentHashMap<>();
-
     public Node(String bootstrapIp, int bootstrapPort, String nodeName, String nodeIp, int nodePort, int hopsCount) {
         this.bootstrapIp = bootstrapIp;
         this.bootstrapPort = bootstrapPort;
@@ -563,43 +559,6 @@ public class Node {
         return 0;
     }
 
-    public Map<String, Long> getReceivedRankMessageMap() {
-        return receivedRankMessageMap;
-    }
-
-
-    public void addToReceivedRankMessageMap(String message, Long timestamp) {
-        receivedRankMessageMap.put(message, timestamp);
-    }
-
-    public void addToReceivedForumMessageMap(String message, Long timestamp) {
-        receivedForumMessageMap.put(message, timestamp);
-    }
-
-    public void addToReceivedForumReplyMessageMap(String message, Long timestamp) {
-        receivedForumReplyMessageMap.put(message, timestamp);
-    }
-
-    public Map<String, Long> getReceivedForumMessageMap() {
-        return receivedForumMessageMap;
-    }
-
-    public Map<String, Long> getReceivedForumReplyMessageMap() {
-        return receivedForumReplyMessageMap;
-    }
-
-
-    public void removeFromReceivedRankMessageMap(String message) {
-        receivedRankMessageMap.remove(message);
-    }
-
-    public void removeFromReceivedForumMessageMap(String message) {
-        receivedForumMessageMap.remove(message);
-    }
-
-    public void removeFromReceivedForumReplyMessageMap(String message) {
-        receivedForumReplyMessageMap.remove(message);
-    }
 
     public static String[] splitIncomingMessage(String incomingMessage) {
         List<String> list = new ArrayList<>();
@@ -741,14 +700,6 @@ class NodeThread extends Thread {
         }
     }
 
-    private String removeLengthAndTimestampFromMessage(String message) {
-        Node.log(INFO, "Original Message : " + message);
-        message = message.split(" ", 2)[1];
-        message = message.substring(0, message.lastIndexOf(" ", message.length()));
-
-        Node.log(INFO, "Trimmed Message : " + message);
-        return message;
-    }
 
     private String joinSearchResults(List<String> fileSearchResultsList) {
         StringBuilder sb = new StringBuilder();
